@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-let data = fs.readFileSync('../json/wykaz_imion.json', 'utf8');
+let data = fs.readFileSync('json/wykaz_imion.json', 'utf8');
 let names = Object.values(JSON.parse(data));
 let arr_obj = [];
 let arr_obj2 = [];
