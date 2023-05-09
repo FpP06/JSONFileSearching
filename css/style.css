@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(69, 70, 75);
+    color: rgb(192, 192, 192);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.container div {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    cursor: pointer;
+}
+
+tr:hover {
+    font-weight: bold;
+}
+
+th::before {
+    content: "\2191\2193";
+    color: white;
+    margin-left: -2.5%;
+    position: absolute;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+button {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+button span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#next {
+    margin-left: calc(var(--bs-border-width) * 3);
+}
+
+@media only screen and (max-width: 770px) {
+    th::before {
+        content: "";
+    }
+}
