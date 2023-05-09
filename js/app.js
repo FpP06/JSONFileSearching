@@ -9,7 +9,7 @@ let tbody = document.querySelector('#tableNames tbody');
 let thead = document.querySelector('#tableNames thead');
 async function init() {
     
-    let response = await fetch('https://fpp06.github.io/JSONFileSearching/json/posortowane_imiona.json');
+    let response = await fetch('json/posortowane_imiona.json');
     data = await response.json();
     data = Object.values(data)
     createTable(data);
