@@ -26,13 +26,6 @@ tr:hover {
     font-weight: bold;
 }
 
-th::before {
-    content: "\2191\2193";
-    color: white;
-    margin-left: -2.5%;
-    position: absolute;
-}
-
 label {
     font-size: 1.5rem;
     font-weight: 600;
@@ -50,10 +43,4 @@ button span {
 
 #next {
     margin-left: calc(var(--bs-border-width) * 3);
-}
-
-@media only screen and (max-width: 770px) {
-    th::before {
-        content: "";
-    }
 }
