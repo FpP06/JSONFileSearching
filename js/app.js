@@ -11,7 +11,7 @@ let thead = document.querySelector('#tableNames thead');
 async function init() {
     let response = await fetch('json/posortowane_imiona.json');
     dataTab = await response.json();
-    dataTab = Object.values(dataTab)
+    dataTab = Object.values(dataTab);
     data = dataTab;
 
     createTable();
